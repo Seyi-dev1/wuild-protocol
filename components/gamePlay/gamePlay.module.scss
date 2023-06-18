@@ -1,0 +1,46 @@
+.gamePlay {
+  .heading {
+    font-size: 1.29rem;
+  }
+  .text {
+    color: #a5acaf;
+    font-size: 0.93rem;
+    max-width: 50rem;
+    margin-top: 1rem;
+  }
+  .button {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    width: fit-content;
+
+    .icons {
+      display: flex;
+      font-size: 1.8rem;
+      .icon {
+        &.move {
+          animation-delay: 0.7s;
+          margin-left: -1.1rem;
+        }
+        animation: change 1s ease infinite;
+        animation-delay: 0.5s;
+
+        @keyframes change {
+          0% {
+            color: #00f4af;
+          }
+          100% {
+            color: #08674c;
+          }
+        }
+      }
+    }
+
+    .btnText {
+      color: #00f4af;
+      font-size: 1.1rem;
+    }
+  }
+}

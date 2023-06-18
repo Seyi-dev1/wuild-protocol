@@ -1,0 +1,21 @@
+.layout {
+  background-color: #020204;
+  color: #fff;
+  font-family: "Neue Machina", sans-serif;
+  display: grid;
+  // overflow: hidden;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // overflow: hidden;
+  }
+
+  .navbar {
+    padding: 0.9rem 4rem;
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.806);
+    top: 0;
+  }
+}

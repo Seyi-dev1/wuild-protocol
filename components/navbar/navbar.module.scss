@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: "Maxellight Outline", "Neue Machina";
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 3rem;
+
+    .link {
+      text-decoration: none;
+      color: #aeabab;
+
+      &.active {
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .buttons {
+    button {
+      background-color: #217960;
+      border: #217960;
+      padding: 15px 20px;
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      &:hover {
+        background-color: #185644;
+      }
+    }
+  }
+}
