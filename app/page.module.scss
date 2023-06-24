@@ -1,11 +1,11 @@
 .page {
-  // display: grid;
-  height: 100rem;
+  height: auto;
+  overflow: hidden;
   .home {
     margin-top: 3rem;
   }
   .gamePlay {
     margin-top: 15rem;
-    padding: 0 6rem;
+    padding: 0 4rem !important;
   }
 }

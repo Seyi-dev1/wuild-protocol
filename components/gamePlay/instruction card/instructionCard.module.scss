@@ -1,0 +1,45 @@
+.instructionCard {
+  outline: 2px solid rgb(35, 38, 46);
+  padding: 2rem 1.5rem !important;
+  .header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+    .rotate {
+      background-color: rgb(19, 18, 18);
+      height: 2rem;
+      width: 2rem;
+      @keyframes rotater {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      animation: rotater 2s linear infinite;
+    }
+    .id {
+      font-weight: 600;
+      position: absolute;
+      left: 10px;
+      font-size: 0.9rem;
+    }
+    .heading {
+      font-size: 0.9rem;
+    }
+  }
+
+  .description {
+    font-size: 0.84rem;
+    margin-top: 1rem;
+    color: #a5acaf;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    color: #00f4af;
+  }
+}

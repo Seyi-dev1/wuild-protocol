@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(0);
-  console.log(scroll);
 
   useEffect(() => {
     const home = document.querySelector("#home");

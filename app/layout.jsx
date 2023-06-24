@@ -3,12 +3,20 @@ import Navbar from "../components/navbar/Navbar";
 import styles from "./globals.module.scss";
 import { Monoton } from "next/font/google";
 import { Orbitron } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export const monoton = Monoton({ subsets: ["latin"], weight: "400" });
-export const orbitron = Orbitron({ subsets: ["latin"], weight: "600" });
+export const orbitron = Orbitron({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
+export const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -30,7 +38,7 @@ export default function RootLayout({ children }) {
     });
     tl.to(triggerElement.current, {
       padding: "0.2rem 0rem",
-      zIndex: 2,
+      zIndex: 50000,
     });
     tl.to(target.current, {
       scale: 0.86,

@@ -13,9 +13,10 @@
   }
 
   .navbar {
-    padding: 0.9rem 4rem;
+    padding: 0.9rem 4rem !important;
     position: sticky;
     background-color: rgba(0, 0, 0, 0.806);
     top: 0;
+    z-index: 10000000;
   }
 }
