@@ -1,11 +1,21 @@
 .page {
   height: auto;
   overflow: hidden;
+
   .home {
     margin-top: 3rem;
   }
   .gamePlay {
     margin-top: 15rem;
+    padding: 0 4rem !important;
+  }
+  .tokens {
+    margin-top: 4rem;
+    padding: 0 4rem !important;
+  }
+  .roadMap {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
     padding: 0 4rem !important;
   }
 }

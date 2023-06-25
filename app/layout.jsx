@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       },
     });
     tl.to(triggerElement.current, {
-      padding: "0.2rem 0rem",
+      // padding: "0.2rem 0rem",
       zIndex: 50000,
     });
     tl.to(target.current, {

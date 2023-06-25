@@ -19,7 +19,7 @@ import SkillCard from "./skill card/SkillCard";
 import data3 from "./instruction card/data";
 import InstructionCard from "./instruction card/InstructionCard";
 import Carousel from "./carousel/Carousel";
-import Carousel1 from "./carousel1/Carousel1";
+import Carousel1 from "../tokens/carousel1/Carousel1";
 
 const GamePlay = () => {
   const buttonRef = useRef(null);
@@ -265,10 +265,10 @@ const GamePlay = () => {
                 src={airforce}
                 alt="us-air-force"
               />
-            </div>
-            <div className={styles.words}>
-              <h2>druids.eth</h2>
-              <p>Burma class</p>
+              <div className={styles.words}>
+                <h2>druids.eth</h2>
+                <p>Burma class</p>
+              </div>
             </div>
             <div className={styles.figure}>
               <div className={styles.space}></div>
@@ -388,9 +388,6 @@ const GamePlay = () => {
             );
           })}
         </div>
-      </div>
-      <div className={styles.tokenSummary}>
-        <Carousel1 />
       </div>
     </div>
   );

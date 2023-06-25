@@ -1,0 +1,68 @@
+.roadMap {
+  .heading {
+    display: grid;
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+  .description {
+    display: grid;
+    margin-top: 1rem;
+    justify-content: center;
+    color: #a5acaf;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(6, 18rem);
+    gap: 20px;
+    margin-top: 4rem;
+    // transform: translateX(-46rem);
+
+    .card {
+      outline: 2px solid #212424;
+      padding: 1rem !important;
+
+      .rotate {
+        position: relative;
+        width: 3rem;
+        height: 3rem;
+        .plate {
+          background-color: rgb(13, 13, 22);
+          width: 3rem;
+          height: 3rem;
+          padding: 0.7rem 0.5rem !important;
+          transform: rotate(35deg);
+        }
+
+        .number {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700;
+          color: aqua;
+        }
+      }
+      .heading {
+        display: block;
+        font-size: 0.8rem;
+        margin-top: 2rem;
+      }
+      .list {
+        ul {
+          padding: 0 1rem;
+          margin-top: 1rem;
+          color: #a5acaf;
+
+          li {
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 import styles from "./page.module.scss";
 import Home from "../components/home/Home";
 import GamePlay from "@/components/gamePlay/GamePlay";
+import Tokens from "@/components/tokens/Tokens";
+import RoadMap from "@/components/road map/RoadMap";
 
 export const metadata = {
   title: "Wuild protocol",
@@ -15,6 +17,12 @@ export default function Page() {
       </div>
       <div className={styles.gamePlay}>
         <GamePlay />
+      </div>
+      <div className={styles.tokens}>
+        <Tokens />
+      </div>
+      <div className={styles.roadMap}>
+        <RoadMap />
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(0);
+  console.log(scroll);
 
   useEffect(() => {
     const home = document.querySelector("#home");
@@ -29,9 +30,15 @@ const Navbar = () => {
     if (scroll <= 250) {
       removeActiveClass();
       home.classList.add(`${styles.active}`);
-    } else if (scroll > 250) {
+    } else if (scroll > 250 && scroll < 2850) {
       removeActiveClass();
       gamePlay.classList.add(`${styles.active}`);
+    } else if (scroll > 2850 && scroll < 4000) {
+      removeActiveClass();
+      tokens.classList.add(`${styles.active}`);
+    } else if (scroll > 4000) {
+      removeActiveClass();
+      roadMap.classList.add(`${styles.active}`);
     }
   }, [scroll]);
 

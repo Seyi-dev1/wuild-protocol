@@ -155,12 +155,15 @@
       }
       .warBadge {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         margin-top: 2rem;
         gap: 1rem;
 
         .wings {
-          // scale: 1.6;
+          display: flex;
+          gap: 10px;
+          align-items: center;
         }
 
         .words {
@@ -173,7 +176,7 @@
           }
         }
         .figure {
-          margin-left: 11rem;
+          margin-right: 1rem;
           position: relative;
           .space {
             padding: 20px;
@@ -329,18 +332,5 @@
       gap: 2rem;
       margin-top: 2rem;
     }
-  }
-  .tokenSummary {
-    margin-top: 8rem;
-    // .heading {
-    //   display: grid;
-    //   justify-content: center;
-    // }
-    // .description {
-    //   margin-top: 1rem;
-    //   display: grid;
-    //   justify-content: center;
-    //   color: #a5acaf;
-    // }
   }
 }
