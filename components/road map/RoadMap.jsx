@@ -19,7 +19,7 @@ const RoadMap = () => {
         trigger: trigger.current,
         start: "top 30%",
         end: "bottom top",
-        scrub: 2,
+        scrub: 4,
       },
     });
     tl.from(listSection.current, {

@@ -54,7 +54,7 @@ const GamePlay = () => {
         trigger: triggerElement.current,
         start: "top 20%",
         // end: "bottom top",
-        scrub: 1,
+        scrub: 2,
       },
     });
 

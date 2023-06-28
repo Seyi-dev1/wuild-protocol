@@ -32,13 +32,12 @@ export default function RootLayout({ children }) {
       scrollTrigger: {
         trigger: triggerElement.current,
         start: "top top",
-        end: "bottom top",
-        scrub: 0.5,
+        scrub: 1,
+        // end: "bottom top",
       },
     });
     tl.to(triggerElement.current, {
-      // padding: "0.2rem 0rem",
-      zIndex: 50000,
+      padding: "0.2rem 1rem",
     });
     tl.to(target.current, {
       scale: 0.86,

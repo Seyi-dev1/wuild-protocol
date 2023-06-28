@@ -36,9 +36,12 @@ const Navbar = () => {
     } else if (scroll > 2850 && scroll < 4000) {
       removeActiveClass();
       tokens.classList.add(`${styles.active}`);
-    } else if (scroll > 4000) {
+    } else if (scroll > 4000 && scroll < 4642) {
       removeActiveClass();
       roadMap.classList.add(`${styles.active}`);
+    } else if (scroll > 4642) {
+      removeActiveClass();
+      community.classList.add(`${styles.active}`);
     }
   }, [scroll]);
 

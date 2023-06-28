@@ -3,6 +3,8 @@ import Home from "../components/home/Home";
 import GamePlay from "@/components/gamePlay/GamePlay";
 import Tokens from "@/components/tokens/Tokens";
 import RoadMap from "@/components/road map/RoadMap";
+import Community from "@/components/community/Community";
+import Footer from "@/components/footer/Footer";
 
 export const metadata = {
   title: "Wuild protocol",
@@ -23,6 +25,12 @@ export default function Page() {
       </div>
       <div className={styles.roadMap}>
         <RoadMap />
+      </div>
+      <div className={styles.community}>
+        <Community />
+      </div>
+      <div className={styles.footer}>
+        <Footer />
       </div>
     </div>
   );
