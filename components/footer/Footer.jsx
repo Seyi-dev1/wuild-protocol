@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
       <div className={styles.footerCredits}>
         <div className={styles.credits}>
-          <p>©Syi.dev 2023. All rights reserved</p>
+          <p>©Seyi.dev 2023. All rights reserved</p>
         </div>
         <div className={styles.socials}>
           <div className={styles.icon}>

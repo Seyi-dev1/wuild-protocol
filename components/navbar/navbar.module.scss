@@ -12,6 +12,10 @@
     color: #fff;
     letter-spacing: 2px;
     font-size: 0.9rem;
+
+    @media screen and (max-width: 1050px) {
+      font-size: 0.5rem;
+    }
   }
 
   .links {
@@ -21,6 +25,9 @@
     .link {
       text-decoration: none;
       color: #aeabab;
+      @media screen and (max-width: 1050px) {
+        font-size: 0.75rem;
+      }
 
       &.active {
         color: #fff;
@@ -42,6 +49,10 @@
       cursor: pointer;
       &:hover {
         background-color: #185644;
+      }
+      @media screen and (max-width: 1050px) {
+        font-size: 0.7rem;
+        padding: 10px 15px;
       }
     }
   }
