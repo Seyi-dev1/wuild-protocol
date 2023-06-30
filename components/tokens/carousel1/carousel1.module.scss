@@ -1,19 +1,27 @@
 .carousel1 {
-  top: 0;
-  // margin-top: 3rem;
-  // margin-bottom: 9rem !important;
   height: 95vh;
   position: relative;
+  @media screen and (max-width: 920px) {
+    display: grid;
+    height: 57vh;
+    align-items: center;
+  }
   .heading {
     display: grid;
     justify-content: center;
     font-size: 1.2rem;
+    @media screen and (max-width: 1050px) {
+      font-size: 1rem;
+    }
   }
   .description {
     display: grid;
     justify-content: center;
     color: #a5acaf;
     margin-top: 1rem;
+    @media screen and (max-width: 1050px) {
+      font-size: 0.8rem;
+    }
   }
 
   .sections {
@@ -31,12 +39,19 @@
       height: 100%;
       width: 35%;
       margin-left: 1rem;
+      @media screen and (max-width: 1050px) {
+        width: 40%;
+        top: 9rem;
+      }
 
       .bar {
         height: 6px;
         background-color: #0a533f;
         z-index: 10;
         position: relative;
+        @media screen and (max-width: 1050px) {
+          height: 3px;
+        }
         .after {
           position: absolute;
           top: 0;
@@ -92,6 +107,10 @@
                 width: 25px;
                 height: 25px;
                 object-fit: cover;
+                @media screen and (max-width: 1050px) {
+                  width: 18px;
+                  height: 18px;
+                }
               }
             }
 
@@ -100,11 +119,17 @@
               font-weight: 700;
               color: #fff;
               margin-top: 0;
+              @media screen and (max-width: 1050px) {
+                font-size: 0.6rem;
+              }
             }
           }
           .topic {
             margin-top: 1rem;
             font-size: 1.3rem;
+            @media screen and (max-width: 1050px) {
+              font-size: 1rem;
+            }
           }
         }
 
@@ -128,6 +153,9 @@
               margin-top: 1rem;
               font-size: 0.95rem;
               line-height: 1.5rem;
+              @media screen and (max-width: 1050px) {
+                font-size: 0.7rem;
+              }
             }
           }
           .button {
@@ -141,17 +169,28 @@
               font-size: 1.05rem;
               letter-spacing: 0;
               font-weight: 700;
+              @media screen and (max-width: 1050px) {
+                padding: 14px 40px;
+                font-size: 0.9rem;
+              }
             }
           }
         }
       }
       .image {
         justify-self: end;
+        @media screen and (max-width: 1050px) {
+          justify-self: center;
+        }
 
         img {
           width: 350px;
           height: 350px;
           object-fit: cover;
+          @media screen and (max-width: 1050px) {
+            width: 250px;
+            height: 250px;
+          }
           @keyframes zoom {
             0% {
               scale: 1.2;

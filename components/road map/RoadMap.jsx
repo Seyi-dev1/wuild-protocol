@@ -18,12 +18,11 @@ const RoadMap = () => {
       scrollTrigger: {
         trigger: trigger.current,
         start: "top 30%",
-        end: "bottom top",
         scrub: 4,
       },
     });
     tl.from(listSection.current, {
-      y: 100,
+      y: 80,
       ease: "power2",
     }).to(
       listSection.current,

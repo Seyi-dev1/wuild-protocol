@@ -16,6 +16,9 @@
     @media screen and (max-width: 1050px) {
       font-size: 0.5rem;
     }
+    @media screen and (max-width: 920px) {
+      font-size: 0.5rem;
+    }
   }
 
   .links {
@@ -27,6 +30,9 @@
       color: #aeabab;
       @media screen and (max-width: 1050px) {
         font-size: 0.75rem;
+      }
+      @media screen and (max-width: 920px) {
+        font-size: 0.6rem;
       }
 
       &.active {

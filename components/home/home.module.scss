@@ -1,12 +1,15 @@
 .home {
   text-align: center;
-  // height: 60rem;
   visibility: hidden;
 
   img {
     width: 130px;
     height: 130px;
     object-fit: cover;
+    @media screen and (max-width: 1050px) {
+      width: 100px;
+      height: 100px;
+    }
   }
   @keyframes move1 {
     0% {
@@ -31,20 +34,37 @@
     top: 12rem;
     transform: rotate(50deg);
     animation: move1 2s ease-in-out alternate infinite;
+    @media screen and (max-width: 920px) {
+      top: 32rem;
+    }
   }
   .coin2 {
     position: absolute;
     left: 4rem;
     top: 20rem;
     animation: move2 4s ease-in-out alternate infinite;
+    @media screen and (max-width: 920px) {
+      display: none;
+    }
   }
 
   .heading {
     font-size: 1.7rem;
     justify-content: center;
     display: grid;
+    @media screen and (max-width: 1050px) {
+      font-size: 1.3rem;
+      margin-top: 6rem;
+    }
+    @media screen and (max-width: 920px) {
+      margin-top: 0;
+    }
     h1 {
       max-width: 50rem;
+      color: #fff;
+      @media screen and (max-width: 1050px) {
+        max-width: 40rem;
+      }
     }
   }
 
@@ -55,9 +75,15 @@
     line-height: 1.5rem;
     display: grid;
     justify-content: center;
+    @media screen and (max-width: 1050px) {
+      font-size: 10px;
+    }
 
     p {
       max-width: 40rem;
+      @media screen and (max-width: 1050px) {
+        max-width: 30rem;
+      }
     }
   }
 
@@ -70,11 +96,17 @@
       padding: 0.5rem 0;
       display: flex;
       align-items: center;
+      @media screen and (max-width: 1050px) {
+        padding: 0.2rem 0;
+      }
 
       .icon {
         margin-left: 1rem;
         font-size: 1.5rem;
         color: #a5acaf;
+        @media screen and (max-width: 1050px) {
+          font-size: 1.2rem;
+        }
       }
 
       input {
@@ -85,6 +117,9 @@
         font-weight: 600;
         margin-left: 1rem;
         margin-right: 5rem;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.8rem;
+        }
       }
 
       button {
@@ -96,6 +131,9 @@
         padding: 15px 30px;
         font-weight: 600;
         margin-right: 1rem;
+        @media screen and (max-width: 1050px) {
+          padding: 10px 20px;
+        }
       }
     }
   }
@@ -110,10 +148,16 @@
     .bold {
       font-weight: 600;
       font-size: 0.95rem;
+      @media screen and (max-width: 1050px) {
+        font-size: 0.75rem;
+      }
     }
     .icon {
       font-size: 12px;
       margin-top: 5px;
+      @media screen and (max-width: 1050px) {
+        font-size: 0.55rem;
+      }
     }
   }
 }

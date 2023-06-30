@@ -12,6 +12,9 @@
     .linksTable {
       .heading {
         font-size: 0.9rem;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.7rem;
+        }
       }
       .links {
         p {
@@ -22,15 +25,21 @@
           &:hover {
             color: #fff;
           }
+          @media screen and (max-width: 1050px) {
+            font-size: 0.7rem;
+          }
         }
       }
     }
     .contact {
       .heading {
         font-size: 0.9rem;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.7rem;
+        }
       }
       .description {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-weight: 400;
         color: #a5acaf;
         margin-top: 5px;
@@ -42,6 +51,9 @@
         align-items: center;
         margin-top: 1rem;
         gap: 1rem;
+        @media screen and (max-width: 1050px) {
+          padding: 0.3rem;
+        }
 
         .inputField {
           input {
@@ -51,6 +63,10 @@
             font-family: inherit;
             font-weight: 700;
             font-size: 0.7rem;
+            margin-left: 1rem;
+            @media screen and (max-width: 1050px) {
+              font-size: 0.6rem;
+            }
           }
         }
         .btn {
@@ -65,6 +81,10 @@
               background-color: #134134;
               cursor: pointer;
             }
+            @media screen and (max-width: 1050px) {
+              padding: 8px 15px;
+              font-size: 0.7rem;
+            }
           }
         }
       }
@@ -78,6 +98,9 @@
     margin-bottom: 3rem;
     .credits {
       color: #a5acaf;
+      @media screen and (max-width: 1050px) {
+        font-size: 0.7rem;
+      }
     }
     .socials {
       display: flex;
@@ -85,6 +108,9 @@
       .icon {
         font-size: 1.3rem;
         color: #00f4af;
+        @media screen and (max-width: 1050px) {
+          font-size: 1rem;
+        }
       }
     }
   }

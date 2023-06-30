@@ -2,12 +2,20 @@
   // overflow: hidden;
   .heading {
     font-size: 1.29rem;
+    @media screen and (max-width: 1050px) {
+      font-size: 1rem;
+    }
   }
   .text {
     color: #a5acaf;
     font-size: 0.93rem;
     max-width: 50rem;
     margin-top: 1rem;
+    line-height: 1.2rem;
+    @media screen and (max-width: 1050px) {
+      font-size: 0.7rem;
+      max-width: 40rem;
+    }
   }
   .button {
     margin-top: 2rem;
@@ -20,6 +28,9 @@
     .icons {
       display: flex;
       font-size: 1.8rem;
+      @media screen and (max-width: 1050px) {
+        font-size: 1.65rem;
+      }
       .icon {
         &.move {
           animation-delay: 0.7s;
@@ -42,6 +53,9 @@
     .btnText {
       color: #00f4af;
       font-size: 1.1rem;
+      @media screen and (max-width: 1050px) {
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -64,7 +78,7 @@
   }
 
   .guildCard {
-    margin-top: 8rem;
+    margin-top: 9rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 5rem;
@@ -74,21 +88,34 @@
         color: #fff;
         font-weight: 400;
         font-size: 2.5rem;
+        @media screen and (max-width: 1050px) {
+          font-size: 1.9rem;
+        }
       }
       .heading {
         color: #fff;
+        margin-top: 2rem;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.9rem;
+        }
       }
       .paragraph1 {
         margin-top: 2rem;
         line-height: 1.5rem;
         font-size: 1rem;
         max-width: 90%;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.75rem;
+        }
       }
       .paragraph2 {
         margin-top: 2rem;
         line-height: 1.5rem;
         font-size: 1rem;
         max-width: 90%;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.75rem;
+        }
       }
       .button {
         background-image: url("../../app/assets/buttonImage.svg");
@@ -99,7 +126,7 @@
         background-repeat: no-repeat;
         display: grid;
         justify-content: center;
-        background-color: rgb(23, 29, 34);
+        background-color: rgb(15, 18, 21);
         align-items: center;
         outline: #0f7e5e 1px solid;
         @keyframes glow {
@@ -112,6 +139,11 @@
         }
 
         animation: glow 2s ease-in-out alternate infinite;
+        @media screen and (max-width: 1050px) {
+          height: 2.5rem;
+          width: 7.8rem;
+          background-size: 10rem 2.5rem;
+        }
         button {
           outline: none;
           border: none;
@@ -119,6 +151,9 @@
           color: #cac5c5;
           font-weight: 600;
           font-size: 0.85rem;
+          @media screen and (max-width: 1050px) {
+            font-size: 0.6rem;
+          }
         }
       }
     }
@@ -139,6 +174,10 @@
         object-fit: cover;
         background-color: rgb(16, 16, 28);
         padding: 10px;
+        @media screen and (max-width: 1050px) {
+          height: 2.3rem;
+          width: 2.3rem;
+        }
         &:hover {
           background-color: rgb(7, 7, 13);
           cursor: pointer;
@@ -151,13 +190,17 @@
           width: 14rem;
           height: 19rem;
           object-fit: cover;
+          @media screen and (max-width: 1050px) {
+            height: 15rem;
+            width: 10rem;
+          }
         }
       }
       .warBadge {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: 1rem;
         gap: 1rem;
 
         .wings {
@@ -169,10 +212,16 @@
         .words {
           h2 {
             font-size: 1.1rem;
+            @media screen and (max-width: 1050px) {
+              font-size: 0.9rem;
+            }
           }
           p {
             font-size: 0.9rem;
             color: #a5acaf;
+            @media screen and (max-width: 1050px) {
+              font-size: 0.7rem;
+            }
           }
         }
         .figure {
@@ -182,6 +231,9 @@
             padding: 20px;
             background-color: rgb(16, 16, 32);
             transform: rotate(-40deg);
+            @media screen and (max-width: 1050px) {
+              padding: 18px;
+            }
           }
           .num {
             position: absolute;
@@ -189,6 +241,9 @@
             left: 25%;
             display: grid;
             justify-content: center;
+            @media screen and (max-width: 1050px) {
+              font-size: 0.8rem;
+            }
           }
         }
       }
@@ -197,6 +252,9 @@
         margin-top: 2rem;
         font-size: 0.8rem;
         color: #a5acaf;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.7rem;
+        }
 
         span {
           color: #fff;
@@ -205,6 +263,9 @@
       .xpCount {
         font-size: 0.8rem;
         margin-top: 1rem;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.7rem;
+        }
         .numbers {
           display: flex;
           gap: 2px;
@@ -228,6 +289,9 @@
             height: 1.2rem;
             position: relative;
             z-index: 1;
+            @media screen and (max-width: 1050px) {
+              height: 1rem;
+            }
             .after {
               height: 100%;
               width: 0%;
@@ -254,6 +318,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         font-size: 0.9rem;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.7rem;
+        }
 
         .header {
           &:nth-child(2) {
@@ -271,6 +338,10 @@
         font-size: 0.8rem;
         text-align: center;
         margin-top: 1rem;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.6rem;
+          padding: 0 1rem;
+        }
       }
     }
     .text {
@@ -278,14 +349,21 @@
         font-weight: 400;
         color: #fff;
         font-size: 3rem;
+        @media screen and (max-width: 1050px) {
+          font-size: 2.2rem;
+        }
       }
       .heading {
         color: #fff;
+        margin-top: 1.5rem;
       }
       .description {
         margin-top: 1rem;
         line-height: 1.5rem;
         font-size: 1rem;
+        @media screen and (max-width: 1050px) {
+          font-size: 0.7rem;
+        }
       }
       .button {
         background-image: url("../../app/assets/buttonImage.svg");
@@ -296,9 +374,14 @@
         background-repeat: no-repeat;
         display: grid;
         justify-content: center;
-        background-color: rgb(23, 29, 34);
+        background-color: rgb(14, 18, 21);
         align-items: center;
         outline: #0f7e5e 1px solid;
+        @media screen and (max-width: 1050px) {
+          height: 2.5rem;
+          width: 7.8rem;
+          background-size: 7.8rem 2.5rem;
+        }
         @keyframes glow {
           0% {
             box-shadow: 0 0 4.0169px rgba(10, 232, 99, 0.33);
@@ -315,6 +398,9 @@
           color: #cac5c5;
           font-weight: 600;
           font-size: 0.9rem;
+          @media screen and (max-width: 1050px) {
+            font-size: 0.75rem;
+          }
         }
       }
     }

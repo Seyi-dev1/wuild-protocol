@@ -1,2 +1,6 @@
 .tokenSummary {
+  @media screen and (max-width: 920px) {
+    display: grid;
+    align-items: center;
+  }
 }

@@ -1,6 +1,9 @@
 .instructionCard {
   outline: 2px solid rgb(35, 38, 46);
   padding: 2rem 1.5rem !important;
+  @media screen and (max-width: 1050px) {
+    padding: 2rem 1rem !important;
+  }
   .header {
     display: flex;
     gap: 15px;
@@ -10,6 +13,10 @@
       background-color: rgb(19, 18, 18);
       height: 2rem;
       width: 2rem;
+      @media screen and (max-width: 1050px) {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
       @keyframes rotater {
         from {
           transform: rotate(0deg);
@@ -25,9 +32,16 @@
       position: absolute;
       left: 10px;
       font-size: 0.9rem;
+      @media screen and (max-width: 1050px) {
+        font-size: 0.75rem;
+        left: 7px;
+      }
     }
     .heading {
       font-size: 0.9rem;
+      @media screen and (max-width: 1050px) {
+        font-size: 0.7rem;
+      }
     }
   }
 
@@ -37,9 +51,15 @@
     color: #a5acaf;
     line-height: 1.4rem;
     margin-bottom: 1rem;
+    @media screen and (max-width: 1050px) {
+      font-size: 0.65rem;
+    }
   }
 
   .button {
     color: #00f4af;
+    @media screen and (max-width: 1050px) {
+      font-size: 0.75rem;
+    }
   }
 }

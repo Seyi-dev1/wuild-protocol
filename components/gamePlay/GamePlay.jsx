@@ -18,8 +18,6 @@ import data2 from "./skill card/data";
 import SkillCard from "./skill card/SkillCard";
 import data3 from "./instruction card/data";
 import InstructionCard from "./instruction card/InstructionCard";
-import Carousel from "./carousel/Carousel";
-import Carousel1 from "../tokens/carousel1/Carousel1";
 
 const GamePlay = () => {
   const buttonRef = useRef(null);
@@ -52,7 +50,7 @@ const GamePlay = () => {
     const anim2 = gsap.timeline({
       scrollTrigger: {
         trigger: triggerElement.current,
-        start: "top 20%",
+        start: "top 50%",
         // end: "bottom top",
         scrub: 2,
       },
@@ -61,7 +59,7 @@ const GamePlay = () => {
     const anim3 = gsap.timeline({
       scrollTrigger: {
         trigger: soldierRef.current,
-        start: "top 5%",
+        start: "top 20%",
         onEnter: () => anim3.play(),
         onLeaveBack: () => anim3.reverse(),
       },
@@ -70,7 +68,7 @@ const GamePlay = () => {
     const anim4 = gsap.timeline({
       scrollTrigger: {
         trigger: soldierRef.current,
-        start: "top 7%",
+        start: "top 20%",
         onEnter: () => anim4.play(),
         onLeaveBack: () => anim4.reverse(),
       },

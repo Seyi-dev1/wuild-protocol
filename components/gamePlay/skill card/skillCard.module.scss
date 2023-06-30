@@ -7,13 +7,23 @@
     rgba(33, 121, 96, 0.21),
     rgba(33, 121, 96, 0)
   );
-
+  @media screen and (max-width: 1050px) {
+    padding: 1rem !important;
+  }
   .header {
     p {
       color: rgb(139, 137, 137);
       font-weight: 600;
       font-size: 0.8rem;
       margin-bottom: 5px;
+      @media screen and (max-width: 1050px) {
+        font-size: 0.65rem;
+      }
+    }
+    h4 {
+      @media screen and (max-width: 1050px) {
+        font-size: 0.7rem;
+      }
     }
   }
 
@@ -61,6 +71,13 @@
       img {
         width: 25px;
         height: 25px;
+        @media screen and (max-width: 1050px) {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      @media screen and (max-width: 1050px) {
+        padding: 9px 10px;
       }
       .rotation {
         animation: rotate 1s ease-in-out infinite;
