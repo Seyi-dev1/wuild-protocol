@@ -66,26 +66,28 @@ const Community = () => {
         </p>
       </div>
       <div className={styles.socialLinks} ref={twitter}>
-        <div className={styles.icon}>
-          <FaTwitter />
-        </div>
-        <div className={styles.icon} ref={discord}>
-          <FaDiscord />
-        </div>
-        <div className={styles.icon} ref={linkedIn}>
-          <FaLinkedinIn />
-        </div>
-        <div className={styles.icon} ref={reddit}>
-          <FaRedditAlien />
-        </div>
-        <div className={styles.icon} ref={facebook}>
-          <FaFacebookSquare />
-        </div>
-        <div className={styles.icon} ref={youtube}>
-          <AiFillYoutube />
-        </div>
-        <div className={styles.icon} ref={instagram}>
-          <AiFillInstagram />
+        <div className={styles.linksContainer}>
+          <div className={styles.icon}>
+            <FaTwitter />
+          </div>
+          <div className={styles.icon} ref={discord}>
+            <FaDiscord />
+          </div>
+          <div className={styles.icon} ref={linkedIn}>
+            <FaLinkedinIn />
+          </div>
+          <div className={styles.icon} ref={reddit}>
+            <FaRedditAlien />
+          </div>
+          <div className={styles.icon} ref={facebook}>
+            <FaFacebookSquare />
+          </div>
+          <div className={styles.icon} ref={youtube}>
+            <AiFillYoutube />
+          </div>
+          <div className={styles.icon} ref={instagram}>
+            <AiFillInstagram />
+          </div>
         </div>
       </div>
     </div>

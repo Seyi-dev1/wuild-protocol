@@ -1,0 +1,96 @@
+.page2 {
+  height: auto;
+  overflow: hidden;
+  .modal {
+    transform: translateX(50rem);
+    &.show {
+      transform: translateX(0);
+    }
+  }
+  .home {
+    margin-top: 3rem;
+    @media screen and (max-width: 920px) {
+      font-size: 0.5rem;
+      height: 80vh;
+      display: grid;
+      margin-top: 0;
+      align-items: center;
+    }
+    @media screen and (max-width: 450px) {
+      height: auto;
+      display: block;
+      align-items: unset;
+      margin-top: 4rem;
+    }
+    @media screen and (max-width: 380px) {
+      margin-top: 2rem;
+    }
+  }
+  .gamePlay {
+    margin-top: 15rem;
+    padding: 0 4rem !important;
+    @media screen and (max-width: 920px) {
+      padding: 0 2rem !important;
+    }
+    @media screen and (max-width: 650px) {
+      margin-top: 20rem;
+    }
+    @media screen and (max-width: 450px) {
+      margin-top: 27rem;
+    }
+    @media screen and (max-width: 380px) {
+      padding: 0rem 1rem;
+    }
+  }
+  .tokens {
+    margin-top: 4rem;
+    padding: 0 4rem !important;
+    @media screen and (max-width: 920px) {
+      padding: 0 2rem !important;
+      margin-top: 0;
+    }
+    @media screen and (max-width: 650px) {
+      margin-top: 10rem;
+    }
+    @media screen and (max-width: 380px) {
+      padding: 0 1rem;
+    }
+  }
+  .roadMap {
+    margin-top: 4rem;
+    padding: 0 4rem !important;
+    @media screen and (max-width: 920px) {
+      padding: 0 2rem !important;
+      margin-top: 10rem;
+    }
+    @media screen and (max-width: 650px) {
+      margin-top: 4rem;
+    }
+    @media screen and (max-width: 380px) {
+      padding: 0 1rem;
+    }
+  }
+  .community {
+    margin-top: 6rem;
+    padding: 0 4rem !important;
+    @media screen and (max-width: 920px) {
+      padding: 0 2rem !important;
+    }
+    @media screen and (max-width: 650px) {
+      margin-top: 9rem;
+    }
+    @media screen and (max-width: 380px) {
+      padding: 0 1rem;
+    }
+  }
+  .footer {
+    margin-top: 10rem;
+    padding: 0 4rem !important;
+    @media screen and (max-width: 920px) {
+      padding: 0 2rem !important;
+    }
+    @media screen and (max-width: 380px) {
+      padding: 0 1rem;
+    }
+  }
+}

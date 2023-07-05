@@ -1,10 +1,17 @@
 .community {
+  // @media screen and (max-width: 650px) {
+  //   width: 70%;
+  //   justify-self: center;
+  // }
   .heading {
     display: grid;
     justify-content: center;
     font-size: 1.5rem;
     @media screen and (max-width: 1050px) {
       font-size: 1.4rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 1.1rem;
     }
   }
   .description {
@@ -18,21 +25,53 @@
       @media screen and (max-width: 1050px) {
         font-size: 0.75rem;
       }
+      @media screen and (max-width: 650px) {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        max-width: 28rem;
+      }
+      @media screen and (max-width: 380px) {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+      }
     }
   }
   .socialLinks {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 2rem;
-    text-align: center;
+    @media screen and (max-width: 650px) {
+      // max-width: 80%;
+      display: grid;
+    }
+    .linksContainer {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 2rem;
+      text-align: center;
 
-    .icon {
-      font-size: 1.3rem;
-      @media screen and (max-width: 1050px) {
-        font-size: 1rem;
+      @media screen and (max-width: 650px) {
+        gap: 4.5rem 3rem;
+        flex-wrap: wrap;
+        margin-top: 6rem;
+        max-width: 60%;
+        justify-self: center;
       }
-      color: #00f4af;
+      @media screen and (max-width: 380px) {
+        gap: 2.5rem 1.5rem;
+      }
+
+      .icon {
+        font-size: 1.3rem;
+        color: #00f4af;
+        @media screen and (max-width: 1050px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 1.9rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 1.4rem;
+        }
+      }
     }
   }
 }

@@ -11,6 +11,7 @@ import explode from "../../../app/assets/icons8-bang-30.png";
 import Image from "next/image";
 import { spaceGrotesk } from "@/app/layout";
 import coin from "../../../app/assets/guild-coin_iagyvp.webp";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 const Carousel1 = () => {
   const sections = useRef(null);
@@ -23,13 +24,21 @@ const Carousel1 = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin);
     const anim1 = gsap.timeline({
       scrollTrigger: {
         trigger: sections.current,
         start: "top 15%",
+        // end: "+=2000px",
         scrub: 0.1,
         pin: true,
       },
+      // onComplete: () => {
+      //   // gsap.set(window, {
+      //   //   scrollTo: anim1.scrollTrigger.start,
+      //   // });
+      //   anim1.revert();
+      // },
     });
 
     anim1

@@ -1,0 +1,233 @@
+.navbar {
+  // margin-top: 5rem;
+  .navContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0rem;
+    // height: 5rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: "Maxellight Outline", "Neue Machina";
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    gap: 10px;
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    @media screen and (max-width: 1050px) {
+      font-size: 0.5rem;
+    }
+    @media screen and (max-width: 920px) {
+      font-size: 0.5rem;
+    }
+    @media screen and (max-width: 650px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 3rem;
+    @media screen and (max-width: 830px) {
+      gap: 2rem;
+    }
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
+    .link {
+      text-decoration: none;
+      color: #aeabab;
+      @media screen and (max-width: 1050px) {
+        font-size: 0.75rem;
+      }
+      @media screen and (max-width: 920px) {
+        font-size: 0.6rem;
+      }
+
+      &.active {
+        color: #fff;
+        font-weight: 600;
+      }
+      &.font {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .buttons {
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
+    button {
+      background-color: #217960;
+      border: #217960;
+      padding: 15px 20px;
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      &:hover {
+        background-color: #185644;
+      }
+      @media screen and (max-width: 1050px) {
+        font-size: 0.7rem;
+        padding: 10px 15px;
+      }
+    }
+  }
+  .menu {
+    display: none;
+
+    @media screen and (max-width: 650px) {
+      display: grid;
+    }
+    .button {
+      padding: 0;
+      outline: none;
+      cursor: pointer;
+    }
+    .button:focus {
+      outline: none;
+    }
+    button::-moz-focus-inner {
+      border: 0;
+    }
+    .button.is-text {
+      background-color: transparent;
+      border: 0;
+    }
+    .button-inner-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+    #menu-button {
+      width: 48px;
+      height: 48px;
+      transition: background-color 2s ease;
+    }
+    /* Menu toggle button */
+    .icon {
+      line-height: 0;
+    }
+    .menu-icon {
+      text-align: right;
+      width: 27px;
+    }
+    .menu-icon::after,
+    .menu-icon::before {
+      background-color: #ffffff;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      width: 27px;
+      margin: 3px 0;
+      transition-duration: 0.5s;
+    }
+    .menu-icon::before {
+      width: 27px;
+    }
+    .menu-icon::after {
+      width: 18px;
+    }
+    #menu-button:hover .menu-icon::before {
+      width: 18px;
+      transition-duration: 0.5s;
+    }
+    #menu-button:hover .menu-icon::after {
+      width: 27px;
+      transition-duration: 0.5s;
+    }
+    #menu-button.is-opened .menu-icon::before {
+      transform: rotateZ(135deg) translate(3px, -3px);
+      width: 27px;
+    }
+    #menu-button.is-opened .menu-icon::after {
+      transform: rotateZ(-135deg) translate(3px, 3px);
+      width: 27px;
+    }
+  }
+  // .modal {
+  //   position: fixed;
+  //   top: 3rem;
+  //   left: 0;
+  //   width: 100% !important;
+  //   height: 100vh !important;
+  //   // z-index: 0;
+  //   background-color: #020204;
+  //   &.transform {
+  //     transform: translateX(0);
+  //   }
+  //   .modalContent {
+  //     width: 100%;
+  //     height: 100%;
+  //     padding: 0 3rem;
+  //     display: grid;
+  //     align-items: center;
+  //     .modalLink {
+  //       padding: 0.4rem;
+  //       outline: 1px solid rgb(57, 56, 56);
+  //       margin-bottom: 20px;
+  //       &.actival {
+  //         .linkContent {
+  //           background-color: #153c31;
+
+  //           .chip {
+  //             visibility: visible;
+  //           }
+  //         }
+  //       }
+  //       .linkContent {
+  //         display: flex;
+  //         justify-content: space-between;
+  //         align-items: center;
+  //         padding: 1rem 1rem;
+  //         // background-color: #153c31;
+
+  //         .chip {
+  //           outline: 2px solid #2eefb8;
+  //           height: 0.8rem;
+  //           width: 0.8rem;
+  //           background-color: black;
+  //           padding: 0.05rem;
+  //           visibility: hidden;
+  //           @keyframes rotate {
+  //             0% {
+  //               transform: rotate(0deg);
+  //             }
+  //             100% {
+  //               transform: rotate(360deg);
+  //             }
+  //           }
+  //           animation: rotate 3s linear infinite;
+
+  //           .chipContent {
+  //             background-color: #2eefb8;
+  //             height: 100%;
+  //             width: 100%;
+  //           }
+  //         }
+  //         .link {
+  //           h4 {
+  //             font-size: 1.3rem;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}

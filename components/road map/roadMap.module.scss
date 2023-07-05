@@ -6,6 +6,15 @@
     @media screen and (max-width: 1050px) {
       font-size: 1rem;
     }
+    @media screen and (max-width: 650px) {
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 0.9rem;
+    }
   }
   .description {
     display: grid;
@@ -14,6 +23,18 @@
     color: #a5acaf;
     @media screen and (max-width: 1050px) {
       font-size: 0.75rem;
+    }
+    @media screen and (max-width: 650px) {
+      font-size: 1rem;
+      line-height: 1.7rem;
+      text-align: center;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 0.8rem;
+    }
+    @media screen and (max-width: 380px) {
+      margin-top: 0.5rem;
+      line-height: 1.2rem;
     }
   }
   .cards {
@@ -29,12 +50,21 @@
     .card {
       outline: 2px solid #212424;
       padding: 1rem !important;
+      height: auto;
 
       .rotate {
         position: relative;
         width: 3rem;
         height: 3rem;
         @media screen and (max-width: 1050px) {
+          width: 2rem;
+          height: 2rem;
+        }
+        @media screen and (max-width: 650px) {
+          width: 3rem;
+          height: 3rem;
+        }
+        @media screen and (max-width: 380px) {
           width: 2rem;
           height: 2rem;
         }
@@ -45,6 +75,14 @@
           padding: 0.7rem 0.5rem !important;
           transform: rotate(35deg);
           @media screen and (max-width: 1050px) {
+            width: 2rem;
+            height: 2rem;
+          }
+          @media screen and (max-width: 650px) {
+            width: 3rem;
+            height: 3rem;
+          }
+          @media screen and (max-width: 380px) {
             width: 2rem;
             height: 2rem;
           }
@@ -64,6 +102,12 @@
           @media screen and (max-width: 1050px) {
             font-size: 0.8rem;
           }
+          @media screen and (max-width: 650px) {
+            font-size: 1rem;
+          }
+          @media screen and (max-width: 380px) {
+            font-size: 0.8rem;
+          }
         }
       }
       .heading {
@@ -72,6 +116,12 @@
         margin-top: 2rem;
         @media screen and (max-width: 1050px) {
           font-size: 0.65rem;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 0.8rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 0.7rem;
         }
       }
       .list {
@@ -85,6 +135,12 @@
             margin-bottom: 10px;
             @media screen and (max-width: 1050px) {
               font-size: 0.65rem;
+            }
+            @media screen and (max-width: 650px) {
+              font-size: 1rem;
+            }
+            @media screen and (max-width: 380px) {
+              font-size: 0.8rem;
             }
           }
         }

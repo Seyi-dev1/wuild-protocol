@@ -1,0 +1,74 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 5;
+  background-color: #020204;
+
+  .modalContent {
+    width: 100%;
+    height: 100%;
+    padding: 0 4rem;
+    display: grid;
+    align-items: center;
+    .modalLink {
+      padding: 0.4rem;
+      outline: 1px solid rgb(57, 56, 56);
+      margin-top: 20px;
+      &.actival {
+        .linkContent {
+          background-color: #153c31;
+
+          .chip {
+            visibility: visible;
+          }
+          .link {
+            h4 {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .linkContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+        // background-color: #153c31;
+
+        .chip {
+          outline: 2px solid #2eefb8;
+          height: 0.8rem;
+          width: 0.8rem;
+          background-color: black;
+          padding: 0.05rem;
+          visibility: hidden;
+          @keyframes rotate {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          animation: rotate 3s linear infinite;
+
+          .chipContent {
+            background-color: #2eefb8;
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .link {
+          h4 {
+            font-size: 1.04rem;
+            letter-spacing: 1px;
+            color: rgb(166, 164, 164);
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,6 +10,10 @@
       width: 100px;
       height: 100px;
     }
+    @media screen and (max-width: 450px) {
+      width: 150px;
+      height: 150px;
+    }
   }
   @keyframes move1 {
     0% {
@@ -37,6 +41,15 @@
     @media screen and (max-width: 920px) {
       top: 32rem;
     }
+    @media screen and (max-width: 650px) {
+      top: 28rem;
+      right: 40%;
+    }
+    @media screen and (max-width: 450px) {
+      top: 23rem;
+      right: 30%;
+      z-index: 0;
+    }
   }
   .coin2 {
     position: absolute;
@@ -44,6 +57,9 @@
     top: 20rem;
     animation: move2 4s ease-in-out alternate infinite;
     @media screen and (max-width: 920px) {
+      top: 36rem;
+    }
+    @media screen and (max-width: 650px) {
       display: none;
     }
   }
@@ -59,11 +75,23 @@
     @media screen and (max-width: 920px) {
       margin-top: 0;
     }
+    @media screen and (max-width: 450px) {
+      font-size: 1.1rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 1rem;
+    }
     h1 {
       max-width: 50rem;
       color: #fff;
       @media screen and (max-width: 1050px) {
         max-width: 40rem;
+      }
+      @media screen and (max-width: 650px) {
+        max-width: 30rem;
+      }
+      @media screen and (max-width: 450px) {
+        max-width: 30rem;
       }
     }
   }
@@ -78,11 +106,28 @@
     @media screen and (max-width: 1050px) {
       font-size: 10px;
     }
+    @media screen and (max-width: 650px) {
+      font-size: 20px;
+      line-height: 1.9rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 15px;
+      line-height: 1.5rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 14px;
+    }
 
     p {
       max-width: 40rem;
       @media screen and (max-width: 1050px) {
         max-width: 30rem;
+      }
+      @media screen and (max-width: 650px) {
+        max-width: 25rem;
+      }
+      @media screen and (max-width: 450px) {
+        max-width: 18rem;
       }
     }
   }
@@ -99,12 +144,24 @@
       @media screen and (max-width: 1050px) {
         padding: 0.2rem 0;
       }
+      @media screen and (max-width: 650px) {
+        padding: 0.9rem;
+      }
+      @media screen and (max-width: 450px) {
+        padding: 0.5rem 0.1rem !important;
+      }
 
       .icon {
         margin-left: 1rem;
         font-size: 1.5rem;
         color: #a5acaf;
         @media screen and (max-width: 1050px) {
+          font-size: 1.2rem;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 1.6rem;
+        }
+        @media screen and (max-width: 450px) {
           font-size: 1.2rem;
         }
       }
@@ -120,6 +177,16 @@
         @media screen and (max-width: 1050px) {
           font-size: 0.8rem;
         }
+        @media screen and (max-width: 650px) {
+          font-size: 1rem;
+          margin-right: 1rem;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 0.8rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 0.7rem;
+        }
       }
 
       button {
@@ -133,6 +200,15 @@
         margin-right: 1rem;
         @media screen and (max-width: 1050px) {
           padding: 10px 20px;
+        }
+        @media screen and (max-width: 650px) {
+          margin-right: 0.5rem;
+        }
+        @media screen and (max-width: 450px) {
+          padding: 10px 12px;
+        }
+        @media screen and (max-width: 380px) {
+          padding: 7px 10px;
         }
       }
     }
@@ -151,12 +227,28 @@
       @media screen and (max-width: 1050px) {
         font-size: 0.75rem;
       }
+      @media screen and (max-width: 650px) {
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 0.9rem;
+      }
+      @media screen and (max-width: 380px) {
+        font-size: 0.8rem;
+      }
     }
     .icon {
       font-size: 12px;
       margin-top: 5px;
       @media screen and (max-width: 1050px) {
         font-size: 0.55rem;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      @media screen and (max-width: 380px) {
+        font-size: 0.8rem;
       }
     }
   }

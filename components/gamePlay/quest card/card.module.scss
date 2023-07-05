@@ -2,6 +2,9 @@
   outline: 5px solid rgb(36, 36, 36);
   padding: 1rem 1rem !important;
   background-color: rgb(13, 11, 11);
+  @media screen and (max-width: 650px) {
+    max-width: 23rem;
+  }
   // min-height: 14rem;
 
   .title {
@@ -10,6 +13,12 @@
     font-weight: 600;
     @media screen and (max-width: 1050px) {
       font-size: 0.65rem;
+    }
+    @media screen and (max-width: 650px) {
+      font-size: 0.8rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 0.7rem;
     }
 
     .type {
@@ -27,6 +36,18 @@
     @media screen and (max-width: 920px) {
       font-size: 0.45rem;
     }
+    @media screen and (max-width: 830px) {
+      font-size: 0.4rem;
+    }
+    @media screen and (max-width: 650px) {
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 0.7rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 0.6rem;
+    }
   }
   .rewards {
     margin-top: 1rem;
@@ -38,6 +59,12 @@
       @media screen and (max-width: 1050px) {
         font-size: 0.55rem;
       }
+      @media screen and (max-width: 650px) {
+        font-size: 0.7rem;
+      }
+      @media screen and (max-width: 380px) {
+        font-size: 0.6rem;
+      }
     }
     .rewardItems {
       display: flex;
@@ -45,6 +72,9 @@
       margin-top: 1rem;
       @media screen and (max-width: 920px) {
         gap: 1rem;
+      }
+      @media screen and (max-width: 650px) {
+        gap: 3rem;
       }
 
       .rewardItem {
@@ -64,10 +94,30 @@
             width: 15px;
             height: 15px;
           }
+          @media screen and (max-width: 650px) {
+            width: 20px;
+            height: 20px;
+          }
+          @media screen and (max-width: 380px) {
+            height: 15px;
+            width: 15px;
+          }
           span {
             font-size: 0.7rem;
             @media screen and (max-width: 1050px) {
               font-size: 0.55rem;
+            }
+            @media screen and (max-width: 830px) {
+              font-size: 0.4rem;
+            }
+            @media screen and (max-width: 650px) {
+              font-size: 0.7rem;
+            }
+            @media screen and (max-width: 450px) {
+              font-size: 0.7rem;
+            }
+            @media screen and (max-width: 380px) {
+              font-size: 0.6rem;
             }
           }
         }
@@ -78,6 +128,18 @@
           @media screen and (max-width: 1050px) {
             font-size: 0.5rem;
           }
+          @media screen and (max-width: 830px) {
+            font-size: 0.4rem;
+          }
+          @media screen and (max-width: 650px) {
+            font-size: 0.8rem;
+          }
+          @media screen and (max-width: 450px) {
+            font-size: 0.6rem;
+          }
+          @media screen and (max-width: 380px) {
+            font-size: 0.5rem;
+          }
         }
         .number {
           font-size: 0.9rem;
@@ -85,6 +147,18 @@
           color: #f3f0f0;
           @media screen and (max-width: 1050px) {
             font-size: 0.6rem;
+          }
+          @media screen and (max-width: 830px) {
+            font-size: 0.5rem;
+          }
+          @media screen and (max-width: 650px) {
+            font-size: 0.9rem;
+          }
+          @media screen and (max-width: 450px) {
+            font-size: 0.8rem;
+          }
+          @media screen and (max-width: 380px) {
+            font-size: 0.7rem;
           }
         }
       }
@@ -113,6 +187,12 @@
       letter-spacing: 1px;
       @media screen and (max-width: 1050px) {
         font-size: 0.65rem;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 0.8rem;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 0.7rem;
       }
       cursor: pointer;
     }

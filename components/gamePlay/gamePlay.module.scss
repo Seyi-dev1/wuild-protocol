@@ -5,6 +5,12 @@
     @media screen and (max-width: 1050px) {
       font-size: 1rem;
     }
+    @media screen and (max-width: 450px) {
+      font-size: 0.8rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 0.7rem;
+    }
   }
   .text {
     color: #a5acaf;
@@ -16,6 +22,18 @@
       font-size: 0.7rem;
       max-width: 40rem;
     }
+    @media screen and (max-width: 650px) {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      margin-top: 2rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+    }
   }
   .button {
     margin-top: 2rem;
@@ -24,11 +42,20 @@
     gap: 1rem;
     cursor: pointer;
     width: fit-content;
+    @media screen and (max-width: 450px) {
+      gap: 0.6rem;
+    }
 
     .icons {
       display: flex;
       font-size: 1.8rem;
       @media screen and (max-width: 1050px) {
+        font-size: 1.65rem;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 450px) {
         font-size: 1.65rem;
       }
       .icon {
@@ -56,6 +83,12 @@
       @media screen and (max-width: 1050px) {
         font-size: 0.9rem;
       }
+      @media screen and (max-width: 650px) {
+        font-size: 1.1rem;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -64,15 +97,56 @@
     justify-content: center;
     gap: 1rem;
     margin-top: 3rem;
+    @media screen and (max-width: 650px) {
+      display: grid;
+      justify-content: center;
+      gap: 2rem;
+      position: relative;
+      margin-top: 6rem;
+    }
 
     .card {
       &:nth-child(1) {
         transform: rotate(-40deg);
         transform-origin: bottom right;
+        @media screen and (max-width: 650px) {
+          position: absolute;
+          top: 2rem;
+          left: 4rem;
+          width: 100%;
+          z-index: 2;
+          @media screen and (max-width: 450px) {
+            top: 0;
+            left: 0;
+          }
+        }
       }
       &:nth-child(3) {
         transform: rotate(40deg);
         transform-origin: bottom left;
+        @media screen and (max-width: 650px) {
+          position: absolute;
+          top: 1rem;
+          left: 3rem;
+          z-index: 1;
+          width: 100%;
+          // display: none;
+          @media screen and (max-width: 450px) {
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      &:nth-child(2) {
+        @media screen and (max-width: 650px) {
+          position: absolute;
+          top: 0rem;
+          left: 2rem;
+          width: 100%;
+          @media screen and (max-width: 450px) {
+            left: 0;
+          }
+        }
       }
     }
   }
@@ -83,6 +157,13 @@
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 5rem;
     align-items: center;
+    @media screen and (max-width: 650px) {
+      margin-top: 22rem;
+    }
+    @media screen and (max-width: 650px) {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
     .text {
       .title {
         color: #fff;
@@ -91,12 +172,31 @@
         @media screen and (max-width: 1050px) {
           font-size: 1.9rem;
         }
+        @media screen and (max-width: 650px) {
+          font-size: 2.3rem;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 1.9rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 1.5rem;
+        }
       }
       .heading {
         color: #fff;
         margin-top: 2rem;
         @media screen and (max-width: 1050px) {
           font-size: 0.9rem;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 0.9rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 0.8rem;
+          margin-top: 1rem;
         }
       }
       .paragraph1 {
@@ -107,6 +207,15 @@
         @media screen and (max-width: 1050px) {
           font-size: 0.75rem;
         }
+        @media screen and (max-width: 650px) {
+          font-size: 1.1rem;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 0.8rem;
+        }
       }
       .paragraph2 {
         margin-top: 2rem;
@@ -115,6 +224,15 @@
         max-width: 90%;
         @media screen and (max-width: 1050px) {
           font-size: 0.75rem;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 1.1rem;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 0.8rem;
         }
       }
       .button {
@@ -154,6 +272,9 @@
           @media screen and (max-width: 1050px) {
             font-size: 0.6rem;
           }
+          @media screen and (max-width: 650px) {
+            font-size: 0.8rem;
+          }
         }
       }
     }
@@ -166,6 +287,10 @@
       background-color: rgb(10, 10, 10);
       padding: 2rem;
       position: relative;
+      @media screen and (max-width: 650px) {
+        justify-self: center;
+        width: 100%;
+      }
       .icon {
         position: absolute;
         right: 2rem;
@@ -177,6 +302,10 @@
         @media screen and (max-width: 1050px) {
           height: 2.3rem;
           width: 2.3rem;
+        }
+        @media screen and (max-width: 380px) {
+          height: 2rem;
+          width: 2rem;
         }
         &:hover {
           background-color: rgb(7, 7, 13);
@@ -194,6 +323,10 @@
             height: 15rem;
             width: 10rem;
           }
+          @media screen and (max-width: 380px) {
+            width: 7rem;
+            height: 11rem;
+          }
         }
       }
       .warBadge {
@@ -202,6 +335,9 @@
         align-items: center;
         margin-top: 1rem;
         gap: 1rem;
+        @media screen and (max-width: 380px) {
+          margin-top: 0.5rem;
+        }
 
         .wings {
           display: flex;
@@ -215,12 +351,18 @@
             @media screen and (max-width: 1050px) {
               font-size: 0.9rem;
             }
+            @media screen and (max-width: 380px) {
+              font-size: 0.8rem;
+            }
           }
           p {
             font-size: 0.9rem;
             color: #a5acaf;
             @media screen and (max-width: 1050px) {
               font-size: 0.7rem;
+            }
+            @media screen and (max-width: 380px) {
+              font-size: 0.6rem;
             }
           }
         }
@@ -234,6 +376,9 @@
             @media screen and (max-width: 1050px) {
               padding: 18px;
             }
+            @media screen and (max-width: 380px) {
+              padding: 14px;
+            }
           }
           .num {
             position: absolute;
@@ -243,6 +388,9 @@
             justify-content: center;
             @media screen and (max-width: 1050px) {
               font-size: 0.8rem;
+            }
+            @media screen and (max-width: 380px) {
+              font-size: 0.6rem;
             }
           }
         }
@@ -255,6 +403,10 @@
         @media screen and (max-width: 1050px) {
           font-size: 0.7rem;
         }
+        @media screen and (max-width: 380px) {
+          font-size: 0.6rem;
+          margin-top: 1rem;
+        }
 
         span {
           color: #fff;
@@ -265,6 +417,9 @@
         margin-top: 1rem;
         @media screen and (max-width: 1050px) {
           font-size: 0.7rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 0.6rem;
         }
         .numbers {
           display: flex;
@@ -292,6 +447,9 @@
             @media screen and (max-width: 1050px) {
               height: 1rem;
             }
+            @media screen and (max-width: 380px) {
+              height: 0.7rem;
+            }
             .after {
               height: 100%;
               width: 0%;
@@ -312,13 +470,30 @@
     margin-top: 15rem;
     margin-bottom: 5rem;
     align-items: center;
+    @media screen and (max-width: 650px) {
+      margin-top: 7rem;
+      gap: 3rem;
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
     .skillList {
       width: 77%;
+      @media screen and (max-width: 650px) {
+        width: 100%;
+        justify-self: center;
+      }
+
       .headers {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         font-size: 0.9rem;
         @media screen and (max-width: 1050px) {
+          font-size: 0.7rem;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 0.8rem;
+        }
+        @media screen and (max-width: 450px) {
           font-size: 0.7rem;
         }
 
@@ -332,6 +507,9 @@
         margin-top: 1.5rem;
         display: grid;
         gap: 1rem;
+        @media screen and (max-width: 650px) {
+          gap: 1.5rem;
+        }
       }
       .forgot {
         color: #a5acaf;
@@ -341,6 +519,15 @@
         @media screen and (max-width: 1050px) {
           font-size: 0.6rem;
           padding: 0 1rem;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 0.8rem;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 0.7rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 0.6rem;
         }
       }
     }
@@ -352,10 +539,19 @@
         @media screen and (max-width: 1050px) {
           font-size: 2.2rem;
         }
+        @media screen and (max-width: 450px) {
+          font-size: 1.8rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 1.55rem;
+        }
       }
       .heading {
         color: #fff;
         margin-top: 1.5rem;
+        @media screen and (max-width: 380px) {
+          margin-top: 0.5rem;
+        }
       }
       .description {
         margin-top: 1rem;
@@ -363,6 +559,17 @@
         font-size: 1rem;
         @media screen and (max-width: 1050px) {
           font-size: 0.7rem;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 1.2rem;
+          line-height: 1.8rem;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 0.9rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 0.8rem;
+          line-height: 1.5rem;
         }
       }
       .button {
@@ -401,6 +608,12 @@
           @media screen and (max-width: 1050px) {
             font-size: 0.75rem;
           }
+          @media screen and (max-width: 650px) {
+            font-size: 0.86rem;
+          }
+          @media screen and (max-width: 380px) {
+            font-size: 0.75rem;
+          }
         }
       }
     }
@@ -408,15 +621,47 @@
   .howItWorks {
     display: grid;
     margin-top: 6rem;
+    @media screen and (max-width: 380px) {
+      margin-top: 10rem;
+    }
     .heading {
       display: grid;
       justify-content: center;
+      @media screen and (max-width: 380px) {
+        margin-bottom: 2rem;
+      }
+      h1 {
+        @media screen and (max-width: 650px) {
+          max-width: 25rem;
+          text-align: center;
+        }
+        @media screen and (max-width: 450px) {
+          max-width: 20rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 1.3rem;
+          max-width: 15rem;
+        }
+      }
     }
     .instructionCards {
       display: flex;
       justify-content: center;
       gap: 2rem;
       margin-top: 2rem;
+      @media screen and (max-width: 650px) {
+        display: grid;
+        justify-content: center;
+      }
+      .card {
+        @media screen and (max-width: 650px) {
+          justify-self: center;
+          max-width: 90%;
+        }
+        @media screen and (max-width: 450px) {
+          max-width: 100%;
+        }
+      }
     }
   }
 }
