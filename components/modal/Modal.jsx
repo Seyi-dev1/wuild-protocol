@@ -28,16 +28,16 @@ const Modal = () => {
     if (scroll <= 250) {
       removeActiveModalClass();
       modalHome.classList.add("actival");
-    } else if (scroll > 250 && scroll < 2850) {
+    } else if (scroll > 250 && scroll < 4190) {
       removeActiveModalClass();
       modalGamePlay.classList.add("actival");
-    } else if (scroll > 2850 && scroll < 4000) {
+    } else if (scroll > 4190 && scroll < 5676) {
       removeActiveModalClass();
       modalTokens.classList.add("actival");
-    } else if (scroll > 4000 && scroll < 4642) {
+    } else if (scroll > 5676 && scroll < 6354) {
       removeActiveModalClass();
       modalRoadMap.classList.add("actival");
-    } else if (scroll > 4642) {
+    } else if (scroll > 6738) {
       removeActiveModalClass();
       modalCommunity.classList.add("actival");
     }
@@ -46,7 +46,7 @@ const Modal = () => {
     <div id="modal" className="modal">
       <div className="modalContent">
         <div className="modalLinks">
-          <div id="modalHome" className="modalLink">
+          <div id="modalHome" className="modalLink one">
             <div className="linkContent">
               <div className="chip">
                 <div className="chipContent"></div>
@@ -59,7 +59,7 @@ const Modal = () => {
               </div>
             </div>
           </div>
-          <div id="modalGamePlay" className="modalLink">
+          <div id="modalGamePlay" className="modalLink two">
             <div className="linkContent">
               <div className="chip">
                 <div className="chipContent"></div>
@@ -72,7 +72,7 @@ const Modal = () => {
               </div>
             </div>
           </div>
-          <div id="modalTokens" className="modalLink">
+          <div id="modalTokens" className="modalLink three">
             <div className="linkContent">
               <div className="chip">
                 <div className="chipContent"></div>
@@ -85,7 +85,7 @@ const Modal = () => {
               </div>
             </div>
           </div>
-          <div id="modalRoadMap" className="modalLink">
+          <div id="modalRoadMap" className="modalLink four">
             <div className="linkContent">
               <div className="chip">
                 <div className="chipContent"></div>
@@ -98,7 +98,7 @@ const Modal = () => {
               </div>
             </div>
           </div>
-          <div id="modalCommunity" className="modalLink">
+          <div id="modalCommunity" className="modalLink five">
             <div className="linkContent">
               <div className="chip">
                 <div className="chipContent"></div>
@@ -111,7 +111,7 @@ const Modal = () => {
               </div>
             </div>
           </div>
-          <div id="modalWhitePaper" className="modalLink">
+          <div id="modalWhitePaper" className="modalLink six">
             <div className="linkContent">
               <div className="chip">
                 <div className="chipContent"></div>
