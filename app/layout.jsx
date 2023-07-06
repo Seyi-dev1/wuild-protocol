@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
           <div className={styles.modal} id="modal">
             <Modal />
           </div>
-          {children}
+          <div className={styles.children}>{children}</div>
         </body>
       </Provider>
     </html>
