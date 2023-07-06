@@ -6,6 +6,9 @@
     align-items: center;
     width: 100%;
     padding: 2rem 0rem;
+    @media screen and (max-width: 380px) {
+      padding: 1rem 0rem;
+    }
     // height: 5rem;
   }
 
