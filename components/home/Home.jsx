@@ -8,7 +8,8 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Elastic } from "gsap";
+import { spaceGrotesk } from "@/app/layout";
+import { orbitron } from "@/app/layout";
 
 const Home = () => {
   const triggerElement = useRef(null);
@@ -71,8 +72,12 @@ const Home = () => {
         <div className={styles.box}>
           <div className={styles.container}>
             <FiMail className={styles.icon} />
-            <input type="text" placeholder="Sign up for Beta Testing" />
-            <button>Submit</button>
+            <input
+              className={orbitron.className}
+              type="text"
+              placeholder="Sign up for Beta Testing"
+            />
+            <button className={spaceGrotesk.className}>Submit</button>
           </div>
         </div>
         <div className={styles.or}>
