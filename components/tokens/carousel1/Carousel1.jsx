@@ -29,16 +29,9 @@ const Carousel1 = () => {
       scrollTrigger: {
         trigger: sections.current,
         start: "top 15%",
-        // end: "+=2000px",
         scrub: 0.1,
         pin: true,
       },
-      // onComplete: () => {
-      //   // gsap.set(window, {
-      //   //   scrollTo: anim1.scrollTrigger.start,
-      //   // });
-      //   anim1.revert();
-      // },
     });
 
     anim1
@@ -129,7 +122,7 @@ const Carousel1 = () => {
               </div>
             </div>
             <div className={styles.image}>
-              <Image src={coin} />
+              <Image src={coin} alt="coin" />
             </div>
           </div>
           <div
@@ -170,7 +163,7 @@ const Carousel1 = () => {
               </div>
             </div>
             <div className={styles.image}>
-              <Image src={coin} />
+              <Image src={coin} alt="coin" />
             </div>
           </div>
           <div
@@ -211,7 +204,7 @@ const Carousel1 = () => {
               </div>
             </div>
             <div className={styles.image}>
-              <Image src={coin} />
+              <Image src={coin} alt="coin" />
             </div>
           </div>
         </div>

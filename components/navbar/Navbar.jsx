@@ -102,13 +102,13 @@ const Navbar = ({ toggle }) => {
       removeActiveClass();
       community.classList.add("active");
     }
-  }, [scroll]);
+  }, [scroll, dispatch]);
 
   return (
     <div className="navbar" ref={trigger}>
       <div className="navContent" ref={target}>
         <div className="logo">
-          <Image src={logo} />
+          <Image src={logo} alt="logo" />
           <p className={monoton.className}>GUILD PROTOCOL</p>
         </div>
         <div className="links" id="links">

@@ -18,6 +18,7 @@ const SkillCard = ({ title, heading, images }) => {
             <div className={styles.image} key={image.id}>
               <Image
                 src={image.Image}
+                alt="skill"
                 className={
                   image.type !== "lock" && image.id === 1
                     ? `${styles.rotation} ${styles.one}`
