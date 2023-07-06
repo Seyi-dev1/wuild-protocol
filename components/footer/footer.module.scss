@@ -29,7 +29,7 @@
           font-size: 0.9rem;
         }
         @media screen and (max-width: 380px) {
-          font-size: 0.8rem;
+          font-size: 0.7rem;
         }
       }
       .links {
@@ -52,7 +52,7 @@
             margin-top: 2rem;
           }
           @media screen and (max-width: 380px) {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
           }
         }
       }
@@ -70,7 +70,7 @@
           font-size: 0.9rem;
         }
         @media screen and (max-width: 380px) {
-          font-size: 0.8rem;
+          font-size: 0.7rem;
         }
       }
       .description {
@@ -83,6 +83,10 @@
         }
         @media screen and (max-width: 450px) {
           font-size: 0.8rem;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 0.7rem;
+          margin-top: 20px;
         }
       }
       .message {
@@ -180,6 +184,9 @@
       }
       @media screen and (max-width: 450px) {
         font-size: 0.7rem;
+      }
+      @media screen and (max-width: 380px) {
+        font-size: 0.5rem;
       }
     }
     .socials {

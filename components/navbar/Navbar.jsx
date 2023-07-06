@@ -109,7 +109,7 @@ const Navbar = ({ toggle }) => {
       <div className="navContent" ref={target}>
         <div className="logo">
           <Image src={logo} alt="logo" />
-          <p className={monoton.className}>GUILD PROTOCOL</p>
+          <p>GUILD PROTOCOL</p>
         </div>
         <div className="links" id="links">
           <Link href={"/"} id="home" className="link">

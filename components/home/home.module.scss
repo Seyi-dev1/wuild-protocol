@@ -51,7 +51,7 @@
       z-index: 0;
     }
     @media screen and (max-width: 380px) {
-      top: 19rem;
+      top: 17rem;
       right: 30%;
       z-index: 0;
     }
@@ -84,7 +84,7 @@
       font-size: 1.1rem;
     }
     @media screen and (max-width: 380px) {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
     h1 {
       max-width: 50rem;
@@ -97,6 +97,10 @@
       }
       @media screen and (max-width: 450px) {
         max-width: 30rem;
+      }
+      @media screen and (max-width: 380px) {
+        line-height: 2.5rem;
+        max-width: 20rem;
       }
     }
   }
