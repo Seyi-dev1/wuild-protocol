@@ -50,6 +50,11 @@
       right: 30%;
       z-index: 0;
     }
+    @media screen and (max-width: 380px) {
+      top: 19rem;
+      right: 30%;
+      z-index: 0;
+    }
   }
   .coin2 {
     position: absolute;
